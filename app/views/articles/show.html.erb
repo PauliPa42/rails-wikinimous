@@ -1,0 +1,13 @@
+<div class="container">
+  <h2>
+    <%= @article.title %>
+  </h2>
+
+  <p>
+    <%= @article.content %>
+  </p>
+  <div class="d-flex">
+    <div> <%= link_to "Back to all Articles", articles_path, :class => "btn btn-primary" %> </div>
+    <div> <%= link_to "Edit this Article", edit_article_path(@article), :class => "btn btn-primary" %> </div>
+  </div>
+</div>
